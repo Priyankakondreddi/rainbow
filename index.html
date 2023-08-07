@@ -13,16 +13,19 @@
         margin-top: 150px;
         padding:200px;
     }
+    button{
+        box-shadow:5px 5px 5px rgb(103, 227, 206) inset;
+    }
 
 </style>
 <body>
-    <button style="padding:30px;border-radius:10%;color:black">Click Me!</button>
+    <button style="padding:30px;border-radius:10%;color:white;font-family:tahoma;">Click Me!</button>
 </body>
 <script>
     const button=document.querySelector("button");
     const body=document.querySelector("body");
     const color=['violet','indigo','blue','green','brown','orange','red'];
-    body.style.backgroundColor='pink';
+    body.style.backgroundColor='black';
     document.addEventListener('click',function(){
            const colorIndex=parseInt(Math.random()*color.length);
            body.style.backgroundColor=color[colorIndex];
